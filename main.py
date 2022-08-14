@@ -3,20 +3,22 @@
 ##SOMEWHERE ELSE AS THIS WILL REWRITE IT
 
 
-##x1mv\\2022\\projectname;passgen;version:1.0\
+##x1mv\\2022\\projectname;chineselastpass;version:1.0\
 import secrets
 import uuid
 import os.path
+import random
+import string
 
 
 
-version = "1.0"
+version = "1.1"
 
 
 f = open("password.txt", "w")
 file_exists = os.path.exists('password.txt')
 ## was only here 4 debugging -> print("password file exists")
-print("passID version",version)
+print("chineselastpass | version",version)
 print("uuid or hex")
 mode = input("choose mode: ")
 
@@ -32,5 +34,4 @@ elif mode == "hex":
     print("output to folder. please check the \n directory where this .py file is.")
     f.write(str(hexSTRING))
     f.close()
-
 x = input("press enter to exit")
